@@ -38,7 +38,6 @@
                 <ul class="nav-list">
                     <li><a href="#" class="nav-link active">หน้าแรก</a></li>
                     <li><a href="#brands" class="nav-link">แบรนด์ที่จำหน่าย</a></li>
-                    <li><a href="#products" class="nav-link">สินค้าแนะนำ</a></li>
                     <li><a href="#about" class="nav-link">ทำไมต้องเลือกเรา</a></li>
                     <li><a href="#contact" class="nav-link">ติดต่อสอบถาม</a></li>
                 </ul>
@@ -79,7 +78,6 @@
             <div class="hero-image-wrapper">
                 <div class="hero-image-bg"></div>
                 <div class="hero-image-card">
-                    <!-- Placeholder premium image for auto parts storefront / setup -->
                     <img src="https://images.unsplash.com/photo-1486006920555-c77dce18193b?q=80&w=600&auto=format&fit=crop" alt="อะไหล่รถยนต์พรีเมียม กิจชัยอะไหล่">
                 </div>
             </div>
@@ -114,12 +112,50 @@
         </div>
     </section>
 
-    <!-- Brands Section -->
+    <!-- Scrolling Logo Marquee Section -->
+    <div class="logo-marquee-container">
+        <div class="logo-marquee-wrapper">
+            <!-- Slide 1 -->
+            <div class="logo-slide">
+                <div class="marquee-logo-item"><img src="assets/logos/petronas.svg" alt="PETRONAS"></div>
+                <div class="marquee-logo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Castrol_logo.svg" alt="CASTROL"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/bosch.svg" alt="BOSCH"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/brembo.svg" alt="BREMBO"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/trw.svg" alt="TRW"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/exedy.png" alt="EXEDY"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/fb_battery.png" alt="FB BATTERY"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/furio.svg" alt="FURIO"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/hella.svg" alt="HELLA"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/lucas.svg" alt="LUCAS"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/philips.svg" alt="PHILIPS"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/kyb.svg" alt="KYB"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/wix.svg" alt="WIX"></div>
+            </div>
+            <!-- Slide 2 (Duplicate for Seamless Loop) -->
+            <div class="logo-slide">
+                <div class="marquee-logo-item"><img src="assets/logos/petronas.svg" alt="PETRONAS"></div>
+                <div class="marquee-logo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Castrol_logo.svg" alt="CASTROL"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/bosch.svg" alt="BOSCH"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/brembo.svg" alt="BREMBO"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/trw.svg" alt="TRW"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/exedy.png" alt="EXEDY"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/fb_battery.png" alt="FB BATTERY"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/furio.svg" alt="FURIO"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/hella.svg" alt="HELLA"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/lucas.svg" alt="LUCAS"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/philips.svg" alt="PHILIPS"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/kyb.svg" alt="KYB"></div>
+                <div class="marquee-logo-item"><img src="assets/logos/wix.svg" alt="WIX"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Brands Grid Section -->
     <section id="brands" class="brands-section section-padding">
         <div class="container">
             <div class="section-header">
                 <h3 class="section-title-alt">Brand Partners</h3>
-                <h2 class="section-title">แบรนด์สินค้าชั้นนำที่เราจัดจำหน่าย</h2>
+                <h2 class="section-title">แบรนด์สินค้าที่เราจัดจำหน่าย</h2>
                 <p class="section-desc-center">คัดสรรเฉพาะอะไหล่และน้ำมันเครื่องแท้ 100% จากผู้ผลิตมาตรฐานสากลระดับโลก</p>
             </div>
             
@@ -131,17 +167,17 @@
                         <span>กลุ่มน้ำมันหล่อลื่น & เคมีภัณฑ์</span>
                     </h3>
                     <div class="brand-logos-grid">
-                        <div class="brand-logo-card featured-petronas">
+                        <div class="brand-logo-card featured-petronas-logo">
                             <span class="badge-featured">Official Partner</span>
-                            <div class="brand-logo-name">PETRONAS</div>
+                            <img src="assets/logos/petronas.svg" alt="PETRONAS" class="brand-logo-img">
                             <div class="brand-logo-desc">น้ำมันเครื่องปิโตรนาสแท้ 100%</div>
                         </div>
                         <div class="brand-logo-card">
-                            <div class="brand-logo-name">CASTROL</div>
-                            <div class="brand-logo-desc">คาสตรอล คอร์ปอเรชั่น</div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Castrol_logo.svg" alt="CASTROL" class="brand-logo-img">
+                            <div class="brand-logo-desc">คาสตรอล หล่อลื่นเกรดโลก</div>
                         </div>
                         <div class="brand-logo-card">
-                            <div class="brand-logo-name">FURIO</div>
+                            <img src="assets/logos/furio.svg" alt="FURIO" class="brand-logo-img">
                             <div class="brand-logo-desc">น้ำมันเครื่องพรีเมียมจากบางจาก</div>
                         </div>
                         <div class="brand-logo-card">
@@ -159,32 +195,80 @@
                     </h3>
                     <div class="brand-logos-grid">
                         <div class="brand-logo-card">
-                            <div class="brand-logo-name">TRW</div>
-                            <div class="brand-logo-desc">ระบบเบรกและช่วงล่างระดับโลก</div>
+                            <img src="assets/logos/trw.svg" alt="TRW" class="brand-logo-img">
+                            <div class="brand-logo-desc">ระบบเบรกและช่วงล่างมาตรฐานโลก</div>
                         </div>
                         <div class="brand-logo-card">
-                            <div class="brand-logo-name">EXEDY</div>
+                            <img src="assets/logos/exedy.png" alt="EXEDY" class="brand-logo-img">
                             <div class="brand-logo-desc">คลัตช์คุณภาพสูงมาตรฐานญี่ปุ่น</div>
                         </div>
                         <div class="brand-logo-card">
-                            <div class="brand-logo-name">AISIN</div>
-                            <div class="brand-logo-desc">อะไหล่ระบบส่งกำลัง ปั๊มน้ำ ไอชิน</div>
+                            <img src="assets/logos/aisin.svg" alt="AISIN" class="brand-logo-img">
+                            <div class="brand-logo-desc">อะไหล่ระบบส่งกำลังและปั๊มน้ำ</div>
                         </div>
                         <div class="brand-logo-card">
-                            <div class="brand-logo-name">SKR</div>
-                            <div class="brand-logo-desc">ยางแท่นเครื่อง แท่นเกียร์ บูชช่วงล่าง</div>
+                            <img src="assets/logos/skr.svg" alt="SKR" class="brand-logo-img">
+                            <div class="brand-logo-desc">ยางแท่นเครื่อง แท่นเกียร์ บูชยาง</div>
                         </div>
                         <div class="brand-logo-card">
-                            <div class="brand-logo-name">LUCAS</div>
+                            <img src="assets/logos/lucas.svg" alt="LUCAS" class="brand-logo-img">
                             <div class="brand-logo-desc">ระบบไฟฟ้า ไดชาร์จ ไดสตาร์ท</div>
                         </div>
                         <div class="brand-logo-card">
-                            <div class="brand-logo-name">HELLA</div>
+                            <img src="assets/logos/hella.svg" alt="HELLA" class="brand-logo-img">
                             <div class="brand-logo-desc">โคมไฟหน้ารถ แตร และชิ้นส่วนแอร์</div>
                         </div>
                         <div class="brand-logo-card">
-                            <div class="brand-logo-name">NSK</div>
-                            <div class="brand-logo-desc">ลูกปืนยานยนต์และตลับลูกปืน NSK</div>
+                            <img src="assets/logos/nsk.svg" alt="NSK" class="brand-logo-img">
+                            <div class="brand-logo-desc">ตลับลูกปืนยานยนต์และตลับลูกปืน NSK</div>
+                        </div>
+                        <div class="brand-logo-card">
+                            <img src="assets/logos/kyb.svg" alt="KYB" class="brand-logo-img">
+                            <div class="brand-logo-desc">โช้คอัพยอดนิยมประสิทธิภาพสูง</div>
+                        </div>
+                        <div class="brand-logo-card">
+                            <img src="assets/logos/bosch.svg" alt="BOSCH" class="brand-logo-img">
+                            <div class="brand-logo-desc">อะไหล่ระบบเครื่องยนต์และหัวเทียน</div>
+                        </div>
+                        <div class="brand-logo-card">
+                            <img src="assets/logos/brembo.svg" alt="BREMBO" class="brand-logo-img">
+                            <div class="brand-logo-desc">ระบบเบรกเกรดสูงสไตล์สปอร์ต</div>
+                        </div>
+                        <div class="brand-logo-card">
+                            <img src="assets/logos/delphi.svg" alt="DELPHI" class="brand-logo-img">
+                            <div class="brand-logo-desc">อะไหล่แท้และเคมีภัณฑ์เดลฟาย</div>
+                        </div>
+                        <div class="brand-logo-card">
+                            <img src="assets/logos/fag.svg" alt="FAG" class="brand-logo-img">
+                            <div class="brand-logo-desc">ตลับลูกปืนและดุมล้อเกรดเยอรมัน</div>
+                        </div>
+                        <div class="brand-logo-card">
+                            <img src="assets/logos/girling.svg" alt="GIRLING" class="brand-logo-img">
+                            <div class="brand-logo-desc">ผ้าเบรกและไฮดรอลิกเบรกคุณภาพ</div>
+                        </div>
+                        <div class="brand-logo-card">
+                            <img src="assets/logos/ina.svg" alt="INA" class="brand-logo-img">
+                            <div class="brand-logo-desc">ลูกรอกสายพานและระบบวาล์วเครื่อง</div>
+                        </div>
+                        <div class="brand-logo-card">
+                            <img src="assets/logos/luk.svg" alt="LUK" class="brand-logo-img">
+                            <div class="brand-logo-desc">ระบบคลัตช์มาตรฐานแท้ติดรถยนต์</div>
+                        </div>
+                        <div class="brand-logo-card">
+                            <img src="assets/logos/monroe.svg" alt="MONROE" class="brand-logo-img">
+                            <div class="brand-logo-desc">โช้คอัพคุณภาพระดับเวิลด์คลาส</div>
+                        </div>
+                        <div class="brand-logo-card">
+                            <img src="assets/logos/nissin.svg" alt="NISSIN" class="brand-logo-img">
+                            <div class="brand-logo-desc">อะไหล่และชิ้นส่วนปั๊มเบรกมาตรฐาน</div>
+                        </div>
+                        <div class="brand-logo-card">
+                            <img src="assets/logos/optibelt.svg" alt="OPTIBELT" class="brand-logo-img">
+                            <div class="brand-logo-desc">สายพานพัดลมและสายพานไทม์มิ่ง</div>
+                        </div>
+                        <div class="brand-logo-card">
+                            <img src="assets/logos/wix.svg" alt="WIX" class="brand-logo-img">
+                            <div class="brand-logo-desc">ไส้กรองน้ำมันเครื่องและกรองอากาศ</div>
                         </div>
                     </div>
                 </div>
@@ -197,16 +281,16 @@
                     </h3>
                     <div class="brand-logos-grid">
                         <div class="brand-logo-card">
-                            <div class="brand-logo-name">WIP</div>
-                            <div class="brand-logo-desc">อะไหล่ระบบพ่วงและรถบรรทุก</div>
+                            <img src="assets/logos/wip_wellinterparts.svg" alt="WIP" class="brand-logo-img">
+                            <div class="brand-logo-desc">อะไหล่ระบบพ่วงและรถใหญ่ WIP</div>
                         </div>
                         <div class="brand-logo-card">
-                            <div class="brand-logo-name">SORL</div>
-                            <div class="brand-logo-desc">ระบบลมเบรกและวาล์วลมรถใหญ่</div>
+                            <img src="assets/logos/sorl.svg" alt="SORL" class="brand-logo-img">
+                            <div class="brand-logo-desc">ระบบเบรกลมและวาล์วลมรถบรรทุก</div>
                         </div>
                         <div class="brand-logo-card">
-                            <div class="brand-logo-name">KTK</div>
-                            <div class="brand-logo-desc">ชิ้นส่วนอะไหล่เพลารถพ่วง</div>
+                            <img src="assets/logos/ktk.svg" alt="KTK" class="brand-logo-img">
+                            <div class="brand-logo-desc">ชิ้นส่วนอะไหล่เพลาและระบบช่วงล่าง</div>
                         </div>
                     </div>
                 </div>
@@ -219,137 +303,15 @@
                     </h3>
                     <div class="brand-logos-grid">
                         <div class="brand-logo-card">
-                            <div class="brand-logo-name">FB BATTERY</div>
-                            <div class="brand-logo-desc">แบตเตอรี่รถยนต์พลังงานสูง</div>
+                            <img src="assets/logos/fb_battery.png" alt="FB BATTERY" class="brand-logo-img">
+                            <div class="brand-logo-desc">แบตเตอรี่รถยนต์ประเภทแห้ง/กึ่งแห้ง</div>
                         </div>
                         <div class="brand-logo-card">
-                            <div class="brand-logo-name">PHILIPS</div>
-                            <div class="brand-logo-desc">หลอดไฟรถยนต์คุณภาพชั้นนำ</div>
+                            <img src="assets/logos/philips.svg" alt="PHILIPS" class="brand-logo-img">
+                            <div class="brand-logo-desc">หลอดไฟหน้าและไฟสัญญาณรถยนต์</div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section id="products" class="products-section section-padding">
-        <div class="container">
-            <div class="section-header">
-                <h3 class="section-title-alt">Best Sellers</h3>
-                <h2 class="section-title">สินค้าแนะนำยอดนิยม</h2>
-                <p class="section-desc-center">เลือกซื้อสินค้าโปรโมชั่นพิเศษ พร้อมราคาอ้างอิงตรงจากร้านค้าทางการบน Lazada ของเรา</p>
-            </div>
-            
-            <div class="products-grid">
-                <!-- Product 1 -->
-                <div class="product-card">
-                    <div class="product-img-wrapper">
-                        <span class="product-badge">ระบบบังคับเลี้ยว</span>
-                        <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=400&auto=format&fit=crop" alt="แร็คพวงมาลัยเพาเวอร์ Chevrolet Optra">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">แร็คพวงมาลัย เพาเวอร์ Chevrolet Optra (ปี 2003-2013) แบรนด์ BBB-TEC คุณภาพสูงตรงรุ่น</h3>
-                        <div class="product-meta">
-                            <div class="product-price">฿5,750 <span>/ ชิ้น</span></div>
-                            <a href="https://www.lazada.co.th/shop/kc-autoparts/" target="_blank" class="product-action-btn" aria-label="ซื้อบน Lazada">
-                                <i data-lucide="chevron-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Product 2 -->
-                <div class="product-card">
-                    <div class="product-img-wrapper">
-                        <span class="product-badge">ระบายความร้อน</span>
-                        <img src="https://images.unsplash.com/photo-1597839219216-a773cb2473e4?q=80&w=400&auto=format&fit=crop" alt="อินเตอร์คูลเลอร์ TOYOTA REVO">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">อินเตอร์คูลเลอร์ TOYOTA REVO, FORTUNER, INNOVA 2.4, 2.8 ปี 2015-ปัจจุบัน คุณภาพพรีเมียม</h3>
-                        <div class="product-meta">
-                            <div class="product-price">฿4,320 <span>/ ชิ้น</span></div>
-                            <a href="https://www.lazada.co.th/shop/kc-autoparts/" target="_blank" class="product-action-btn" aria-label="ซื้อบน Lazada">
-                                <i data-lucide="chevron-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Product 3 -->
-                <div class="product-card">
-                    <div class="product-img-wrapper">
-                        <span class="product-badge">ระบบควบคุมอากาศ</span>
-                        <img src="https://images.unsplash.com/photo-1616788494707-ec28f08d05a1?q=80&w=400&auto=format&fit=crop" alt="ลิ้นปีกผีเสื้อ NISSAN MARCH">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">ลิ้นปีกผีเสื้อ ลิ้นเร่งไฟฟ้า NISSAN MARCH ALMERA 1.2L รหัสแท้ 16119-1HC0E ตรงรุ่น</h3>
-                        <div class="product-meta">
-                            <div class="product-price">฿4,770 <span>/ ชิ้น</span></div>
-                            <a href="https://www.lazada.co.th/shop/kc-autoparts/" target="_blank" class="product-action-btn" aria-label="ซื้อบน Lazada">
-                                <i data-lucide="chevron-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Product 4 -->
-                <div class="product-card">
-                    <div class="product-img-wrapper">
-                        <span class="product-badge">แบตเตอรี่</span>
-                        <img src="https://images.unsplash.com/photo-1548345680-f5475ea5df84?q=80&w=400&auto=format&fit=crop" alt="แบตเตอรี่ Chloride EFB LN3">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">แบตเตอรี่ Chloride EFB LN3 สำหรับระบบเครื่องยนต์ START-STOP 100834 แบตเตอรี่แห้งทนทาน</h3>
-                        <div class="product-meta">
-                            <div class="product-price">฿4,600 <span>/ ชิ้น</span></div>
-                            <a href="https://www.lazada.co.th/shop/kc-autoparts/" target="_blank" class="product-action-btn" aria-label="ซื้อบน Lazada">
-                                <i data-lucide="chevron-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Product 5 -->
-                <div class="product-card">
-                    <div class="product-img-wrapper">
-                        <span class="product-badge">ช่วงล่าง & ลูกปืน</span>
-                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=400&auto=format&fit=crop" alt="ลูกปืนล้อหน้า Ranger">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">ลูกปืนล้อหน้า Ranger'22-26 Next gen 4WD / Raptor '22-26 เกรดเทียบเท่าแท้ศูนย์</h3>
-                        <div class="product-meta">
-                            <div class="product-price">฿5,000 <span>/ คู่</span></div>
-                            <a href="https://www.lazada.co.th/shop/kc-autoparts/" target="_blank" class="product-action-btn" aria-label="ซื้อบน Lazada">
-                                <i data-lucide="chevron-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Product 6 -->
-                <div class="product-card">
-                    <div class="product-img-wrapper">
-                        <span class="product-badge">เสื้อสูบ & หน้าเครื่อง</span>
-                        <img src="https://images.unsplash.com/photo-1530047625168-4b29bf822f41?q=80&w=400&auto=format&fit=crop" alt="ฝาครอบหน้าเครื่อง RANGER">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">ฝาครอบหน้าเครื่อง พร้อมซีลข้อเหวี่ยงหน้า FORD RANGER / EVEREST 18 2.0L เกรดส่งออก</h3>
-                        <div class="product-meta">
-                            <div class="product-price">฿5,200 <span>/ ชิ้น</span></div>
-                            <a href="https://www.lazada.co.th/shop/kc-autoparts/" target="_blank" class="product-action-btn" aria-label="ซื้อบน Lazada">
-                                <i data-lucide="chevron-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="products-cta">
-                <a href="https://www.lazada.co.th/shop/kc-autoparts/" target="_blank" class="btn btn-secondary btn-lg">
-                    <i data-lucide="shopping-bag"></i>
-                    <span>ค้นหาและสั่งซื้อชิ้นส่วนอื่นเพิ่มบน Lazada</span>
-                </a>
             </div>
         </div>
     </section>
@@ -456,7 +418,7 @@
                             <div class="channel-details">
                                 <h4>สายด่วนติดต่อสอบถาม</h4>
                                 <p class="channel-id">โทร. 090-240-6826</p>
-                                <span class="badge">เวลาทำการ 08:00 - 18:00 น.</span>
+                                <span class="badge">เวลาทำการ 08:00 - 17:00 น.</span>
                             </div>
                             <div class="channel-actions">
                                 <a href="tel:0902406826" class="btn btn-sm btn-primary">โทรออก</a>
@@ -479,7 +441,7 @@
                         </div>
                         <div class="address-item">
                             <i data-lucide="clock"></i>
-                            <span>เวลาเปิด-ปิด: 08:00 น. - 18:00 น.</span>
+                            <span>เวลาเปิด-ปิด: 08:00 น. - 17:00 น.</span>
                         </div>
                         <div class="address-item">
                             <i data-lucide="mail"></i>
@@ -494,7 +456,7 @@
                             <p>มีหน้าร้านขนาดใหญ่ชัดเจน บริการจัดส่งทั่วประเทศ ปลอดภัย เชื่อถือได้ 100%</p>
                             <a href="https://www.google.com/maps/search/?api=1&query=กิจชัยอะไหล่+แก้งคร้อ" target="_blank" class="btn btn-outline">
                                 <i data-lucide="external-link"></i>
-                                <span>เปิดนำทางใน Google Maps</span>
+                                <span>เปิดนำทาง in Google Maps</span>
                             </a>
                         </div>
                     </div>
@@ -516,7 +478,6 @@
                     <ul>
                         <li><a href="#">หน้าแรก</a></li>
                         <li><a href="#brands">แบรนด์สินค้า</a></li>
-                        <li><a href="#products">สินค้าแนะนำ</a></li>
                         <li><a href="#contact">ติดต่อเรา</a></li>
                     </ul>
                 </div>

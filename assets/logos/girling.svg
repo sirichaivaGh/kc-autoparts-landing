@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+  <rect width="200" height="80" fill="#E31E24" rx="6" />
+  <ellipse cx="100" cy="40" rx="80" ry="28" fill="none" stroke="#FFFFFF" stroke-width="4" />
+  <text x="100" y="52" font-family="'Brush Script MT', 'Georgia', cursive, serif" font-weight="bold" font-style="italic" font-size="36" fill="#FFFFFF" text-anchor="middle">Girling</text>
+</svg>

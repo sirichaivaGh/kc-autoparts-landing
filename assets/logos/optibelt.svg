@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+  <rect width="200" height="80" fill="#1A1A1A" rx="6" />
+  <text x="100" y="48" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="32" fill="#FFFFFF" text-anchor="middle">optibelt</text>
+  <line x1="30" y1="58" x2="170" y2="58" stroke="#FFCC00" stroke-width="4" />
+</svg>
