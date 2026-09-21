@@ -3,312 +3,552 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>บจก. กิจชัยอะไหล่ (แก้งคร้อ) | ศูนย์รวมอะไหล่รถยนต์และน้ำมันเครื่องครบวงจร</title>
-    <meta name="description" content="บริษัท กิจชัยอะไหล่ จำกัด (KC-AUTOPARTS) อำเภอแก้งคร้อ จังหวัดชัยภูมิ จำหน่ายอะไหล่รถยนต์แท้และทดแทนทุกชนิด น้ำมันเครื่อง PETRONAS, Castrol และแบรนด์ชั้นนำ พร้อมจัดส่งทั่วประเทศ โทร. 090-240-6826">
-    
-    <!-- Google Fonts: Kanit -->
+    <meta name="description" content="บจก. กิจชัยอะไหล่ (แก้งคร้อ) - ศูนย์กระจายอะไหล่รถยนต์ อะไหล่รถบรรทุก แท้ 100% ตัวแทนจำหน่ายแบรนด์ชั้นนำระดับโลก PETRONAS, TRW, FB, KYB, EXEDY, NSK, SORL, LUCAS">
+    <meta name="keywords" content="กิจชัยอะไหล่, KC Autoparts, อะไหล่รถยนต์ แก้งคร้อ, อะไหล่รถบรรทุก ชัยภูมิ, ตัวแทนจำหน่าย KYB, ผ้าเบรก TRW, คลัตช์ Exedy, อะไหล่แท้ Aisin, น้ำมันเครื่อง Petronas, ลูกปืน SKF, ลูกปืน NSK, ขอนแก่นอะไหล่">
+    <title>บจก. กิจชัยอะไหล่ | ศูนย์กระจายอะไหล่รถยนต์และตัวแทนจำหน่ายแบรนด์ชั้นนำ</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header Navigation -->
-    <header class="header" id="mainHeader">
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="top-bar-left">
+                <span>📍 พิกัดหน้าร้าน: อ.แก้งคร้อ จ.ชัยภูมิ (บริการจัดส่งทั่วประเทศ)</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="tel:0902406826">📞 โทรสอบถาม: 090-240-6826</a>
+                <span class="divider">|</span>
+                <span>⏰ เวลาทำการ: จันทร์ - เสาร์ 08:00 - 17:00 น. (หยุดวันอาทิตย์)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <header class="main-header">
         <div class="container header-container">
-            <a href="#" class="logo">
-                <span class="logo-icon"><i data-lucide="cog"></i></span>
-                <div class="logo-text">
-                    <h1>กิจชัยอะไหล่</h1>
-                    <span>KC-AUTOPARTS</span>
-                </div>
+            <a href="#" class="brand-logo">
+                <span class="logo-main">กิจชัยอะไหล่</span>
+                <span class="logo-sub">KC-AUTOPARTS</span>
             </a>
             
-            <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู">
-                <i data-lucide="menu"></i>
-            </button>
-            
-            <nav class="nav" id="navMenu">
-                <ul class="nav-list">
-                    <li><a href="#" class="nav-link active">หน้าแรก</a></li>
-                    <li><a href="#brands" class="nav-link">แบรนด์ที่จำหน่าย</a></li>
-                    <li><a href="#about" class="nav-link">ทำไมต้องเลือกเรา</a></li>
-                    <li><a href="#contact" class="nav-link">ติดต่อสอบถาม</a></li>
-                </ul>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#" class="nav-link active">หน้าแรก</a>
+                <a href="#why-us" class="nav-link">ทำไมต้องเลือกเรา</a>
+                <a href="#brands" class="nav-link">แบรนด์ที่จำหน่าย</a>
+                <a href="#categories" class="nav-link">หมวดหมู่สินค้า</a>
+                <a href="#gallery" class="nav-link">ภาพหน้าร้าน</a>
+                <a href="#contact" class="nav-link">ติดต่อเรา</a>
             </nav>
-            
-            <div class="header-cta">
-                <a href="tel:0902406826" class="btn btn-phone btn-sm">
-                    <i data-lucide="phone"></i>
-                    <span>090-240-6826</span>
+
+            <div class="nav-actions">
+                <a href="https://line.me/ti/p/~@joj9586w" target="_blank" class="btn btn-green btn-nav-cta">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738S0 4.935 0 10.304c0 4.81 4.26 8.847 10.014 9.578.39.082.92.257 1.054.59.123.308.08.79.039 1.102-.04.308-.184 1.25-.224 1.517-.067.43-.314 1.684 1.353.918 1.667-.767 9.012-5.31 12.28-9.088C22.684 13.064 24 11.758 24 10.304zm-16.744.908H5.97a.38.38 0 01-.38-.38v-3.79a.38.38 0 01.38-.38.38.38 0 01.38.38v3.41h1.286a.38.38 0 01.38.38.38.38 0 01-.38.38zm2.253-.38a.38.38 0 01-.38.38h-.758a.38.38 0 01-.38-.38v-3.79a.38.38 0 01.38-.38h.758c.21 0 .38.17.38.38v3.79zm-.758-.758h.379v-2.274h-.379v2.274zm4.246.758a.38.38 0 01-.302.148H12c-.21 0-.38-.17-.38-.38v-3.79c0-.21.17-.38.38-.38h.76c.21 0 .38.17.38.38v2.492l1.326-2.68a.377.377 0 01.442-.206c.196.05.321.242.276.438L13.88 9.54h1.173a.38.38 0 01.38.38.38.38 0 01-.38.38h-1.306zm3.32-.423c-.097.23-.332.378-.58.378h-1.286a.38.38 0 01-.38-.38v-3.79a.38.38 0 01.38-.38h1.286c.248 0 .483.148.58.378a.38.38 0 01-.7.294h-.786v1.137h.786a.38.38 0 010 .758h-.786v1.137h.786c.328 0 .614-.2.699-.516a.38.38 0 01.716.191z"/></svg>
+                    <span>ไลน์หาเรา</span>
                 </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-image-bg"></div>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
         <div class="container hero-container">
             <div class="hero-content">
-                <span class="hero-tag">
-                    <i data-lucide="award"></i>
-                    <span>ประสบการณ์ความไว้วางใจกว่า 30 ปี</span>
-                </span>
-                <h2 class="hero-title">ศูนย์รวมอะไหล่รถยนต์<br>และน้ำมันเครื่อง <span class="highlight">ครบวงจร</span></h2>
-                <p class="hero-subtitle">บจก. กิจชัยอะไหล่ (แก้งคร้อ) ตัวแทนจำหน่ายน้ำมันหล่อลื่น PETRONAS อย่างเป็นทางการ และแหล่งรวมอะไหล่แท้/ทดแทนแบรนด์ดังระดับโลกกว่า 100,000 รายการ เช็กราคาตรงรุ่น รวดเร็ว ทันใจ</p>
+                <div class="badge-trust">
+                    <span class="badge-icon">🏎️</span>
+                    <span class="badge-text">ศูนย์กระจายอะไหล่รถยนต์และตัวแทนจำหน่ายแบรนด์ชั้นนำ</span>
+                </div>
+                <h1 class="hero-title">ศูนย์รวมอะไหล่รถยนต์แท้<br><span class="text-highlight">ครบ จบ ในที่เดียว</span></h1>
+                <p class="hero-subtitle">
+                    จำหน่ายอะไหล่รถยนต์และรถบรรทุกคุณภาพสูง ทั้งปลีกและส่ง ได้มาตรฐานของแท้ 100% 
+                    พร้อมสต๊อกแบรนด์ระดับโลก และทีมงานผู้เชี่ยวชาญตรวจสอบชิ้นส่วนตรงรุ่นทันที
+                </p>
                 <div class="hero-actions">
-                    <a href="https://line.me/ti/p/~@joj9586w" target="_blank" class="btn btn-primary btn-lg">
-                        <i data-lucide="message-square"></i>
-                        <span>สอบถามราคาทาง LINE (@joj9586w)</span>
+                    <a href="https://line.me/ti/p/~@joj9586w" target="_blank" class="btn btn-green btn-large">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738S0 4.935 0 10.304c0 4.81 4.26 8.847 10.014 9.578.39.082.92.257 1.054.59.123.308.08.79.039 1.102-.04.308-.184 1.25-.224 1.517-.067.43-.314 1.684 1.353.918 1.667-.767 9.012-5.31 12.28-9.088C22.684 13.064 24 11.758 24 10.304zm-16.744.908H5.97a.38.38 0 01-.38-.38v-3.79a.38.38 0 01.38-.38.38.38 0 01.38.38v3.41h1.286a.38.38 0 01.38.38.38.38 0 01-.38.38zm2.253-.38a.38.38 0 01-.38.38h-.758a.38.38 0 01-.38-.38v-3.79a.38.38 0 01.38-.38h.758c.21 0 .38.17.38.38v3.79zm-.758-.758h.379v-2.274h-.379v2.274zm4.246.758a.38.38 0 01-.302.148H12c-.21 0-.38-.17-.38-.38v-3.79c0-.21.17-.38.38-.38h.76c.21 0 .38.17.38.38v2.492l1.326-2.68a.377.377 0 01.442-.206c.196.05.321.242.276.438L13.88 9.54h1.173a.38.38 0 01.38.38.38.38 0 01-.38.38h-1.306zm3.32-.423c-.097.23-.332.378-.58.378h-1.286a.38.38 0 01-.38-.38v-3.79a.38.38 0 01.38-.38h1.286c.248 0 .483.148.58.378a.38.38 0 01-.7.294h-.786v1.137h.786a.38.38 0 010 .758h-.786v1.137h.786c.328 0 .614-.2.699-.516a.38.38 0 01.716.191z"/></svg>
+                        <span>🟢 สอบถามผ่าน LINE</span>
                     </a>
-                    <a href="https://www.lazada.co.th/shop/kc-autoparts/" target="_blank" class="btn btn-outline btn-lg">
-                        <i data-lucide="shopping-bag"></i>
-                        <span>เลือกช้อปบน LAZADA</span>
+                    <a href="https://m.me/Kijchaialai.KK" target="_blank" class="btn btn-blue btn-large">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2C6.477 2 2 6.145 2 11.258c0 2.914 1.455 5.518 3.735 7.21v3.743c0 .285.317.46.558.31l4.137-2.583a12.87 12.87 0 0 0 1.57.098c5.523 0 10-4.146 10-9.258C22 6.145 17.523 2 12 2zm1.096 12.012l-2.488-2.658-4.848 2.658 5.334-5.666 2.532 2.658 4.804-2.658-5.334 5.666z"/></svg>
+                        <span>🔵 ทักทายผ่าน Messenger</span>
+                    </a>
+                    <a href="#rfq-section" class="btn btn-orange btn-large">
+                        <span>📋 ขอใบเสนอราคาด่วน</span>
                     </a>
                 </div>
             </div>
             
-            <div class="hero-image-wrapper">
-                <div class="hero-image-bg"></div>
-                <div class="hero-image-card">
-                    <img src="https://images.unsplash.com/photo-1486006920555-c77dce18193b?q=80&w=600&auto=format&fit=crop" alt="อะไหล่รถยนต์พรีเมียม กิจชัยอะไหล่">
+            <div class="hero-visual">
+                <div class="car-brands-container">
+                    <span class="brands-title">รองรับอะไหล่รถยนต์ยี่ห้อชั้นนำ</span>
+                    <img src="assets/car_brands.jpg" alt="ยี่ห้อรถยนต์ที่รองรับ" class="car-brands-img">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
+    <!-- WHY CHOOSE US SECTION -->
+    <section class="why-us-section" id="why-us">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tagline">WHY CHOOSE US</span>
+                <h2 class="section-title text-navy">ทำไมลูกค้าและอู่ซ่อมรถชั้นนำจึงเลือกเรา</h2>
+                <div class="title-underline"></div>
+                <p class="section-desc">ด้วยประสบการณ์ยาวนานและการคัดสรรผลิตภัณฑ์ที่มีมาตรฐาน ทำให้เราได้รับความไว้วางใจมาโดยตลอด</p>
+            </div>
+
+            <div class="why-us-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 class="feature-title">สินค้าแท้ 100%</h3>
+                    <p class="feature-text">ไม่มีปนของเทียม สินค้าทุกชิ้นส่งตรงจากผู้จัดจำหน่ายแบรนด์อย่างเป็นทางการ การันตีความปลอดภัย</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🏅</div>
+                    <h3 class="feature-title">ตัวแทนแบรนด์ชั้นนำ</h3>
+                    <p class="feature-text">เป็นผู้จัดจำหน่ายแบรนด์อะไหล่และน้ำมันหล่อลื่นระดับโลกอย่างเป็นทางการ มั่นใจได้ในมาตรฐาน</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🏪</div>
+                    <h3 class="feature-title">สต๊อกสินค้าพร้อมส่ง</h3>
+                    <p class="feature-text">มีคลังสินค้าขนาดใหญ่ในพื้นที่ ไม่ต้องรอสั่งจองนาน มีสินค้าพร้อมส่งให้ลูกค้าได้ทันที</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3 class="feature-title">ทีมเช็กอะไหล่ตรงรุ่น</h3>
+                    <p class="feature-text">บริการเช็กอะไหล่จากเลขตัวถังรถยนต์ (VIN) และส่งรูปเทียบก่อนชำระเงิน หมดกังวลเรื่องการสั่งผิดขนาด</p>
+                </div>
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon">📜</div>
+                    <h3 class="feature-title">การรับประกันสินค้า</h3>
+                    <p class="feature-text">สินค้ารับประกันคุณภาพจากผู้ผลิตโดยตรง พร้อมเงื่อนไขการเคลมและเปลี่ยนคืนสินค้าที่เป็นธรรม</p>
+                </div>
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3 class="feature-title">ส่งด่วนทั่วประเทศ</h3>
+                    <p class="feature-text">แพ็กและจัดส่งสินค้าอย่างแน่นหนาผ่านขนส่งชั้นนำใน 24 ชั่วโมง ครอบคลุมพื้นที่ 77 จังหวัดทั่วไทย</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRANDS GRID SECTION - CLEAN LOGO PLATES ON CONTRAST CONTAINER -->
+    <section class="brands-section" id="brands">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tagline">AUTHORIZED DISTRIBUTOR</span>
+                <h2 class="section-title text-navy">ตัวแทนจำหน่ายแบรนด์มาตรฐานระดับโลก</h2>
+                <div class="title-underline"></div>
+                <p class="section-desc">เราได้รับการแต่งตั้งและนำเข้าสินค้าแท้ 100% จากผู้ผลิตแบรนด์ชั้นนำ</p>
+            </div>
+
+            <!-- UNIFIED LOGO GRID (CORE BRANDS DISPLAYED FIRST) -->
+            <div class="brands-grid">
+                <!-- Core 8 Brands -->
+                <div class="brand-item-logo">
+                    <img src="assets/logos/petronas.svg" alt="PETRONAS">
+                    <span>PETRONAS</span>
+                    <p>น้ำมันหล่อลื่นเกรดพรีเมียม</p>
+                </div>
+                <div class="brand-item-logo">
+                    <img src="assets/logos/trw.svg" alt="TRW">
+                    <span>TRW</span>
+                    <p>ระบบเบรกและความปลอดภัย</p>
+                </div>
+                <div class="brand-item-logo">
+                    <img src="assets/logos/fb_battery.png" alt="FB BATTERY">
+                    <span>FB BATTERY</span>
+                    <p>แบตเตอรี่รถยนต์พลังงานสูง</p>
+                </div>
+                <div class="brand-item-logo">
+                    <img src="assets/logos/kyb.svg" alt="KYB">
+                    <span>KYB</span>
+                    <p>ช่วงล่างและโช้คอัพ</p>
+                </div>
+                <div class="brand-item-logo">
+                    <img src="assets/logos/exedy.png" alt="EXEDY">
+                    <span>EXEDY</span>
+                    <p>ระบบคลัตช์และแรงส่งกำลัง</p>
+                </div>
+                <div class="brand-item-logo">
+                    <img src="assets/logos/nsk.svg" alt="NSK">
+                    <span>NSK</span>
+                    <p>ลูกปืนล้อและตลับลูกปืนหลัก</p>
+                </div>
+                <div class="brand-item-logo">
+                    <img src="assets/logos/sorl.svg" alt="SORL">
+                    <span>SORL</span>
+                    <p>ระบบลมและอะไหล่รถบรรทุก</p>
+                </div>
+                <div class="brand-item-logo">
+                    <img src="assets/logos/lucas.svg" alt="LUCAS">
+                    <span>LUCAS</span>
+                    <p>ชิ้นส่วนและระบบไฟฟ้ารถยนต์</p>
+                </div>
+
+                <!-- Secondary 20 Partner Brands -->
+                <div class="brand-item-logo mini">
+                    <img src="assets/logos/aisin.svg" alt="AISIN">
+                    <span>AISIN</span>
+                </div>
+                <div class="brand-item-logo mini">
+                    <img src="assets/logos/bosch.svg" alt="BOSCH">
+                    <span>BOSCH</span>
+                </div>
+                <div class="brand-item-logo mini">
+                    <img src="assets/logos/brembo.svg" alt="BREMBO">
+                    <span>BREMBO</span>
+                </div>
+                <div class="brand-item-logo mini">
+                    <img src="assets/logos/castrol.svg" alt="CASTROL">
+                    <span>CASTROL</span>
+                </div>
+                <div class="brand-item-logo mini">
+                    <img src="assets/logos/delphi.svg" alt="DELPHI">
+                    <span>DELPHI</span>
+                </div>
+                <div class="brand-item-logo mini">
+                    <img src="assets/logos/fag.svg" alt="FAG">
+                    <span>FAG</span>
+                </div>
+                <div class="brand-item-logo mini">
+                    <img src="assets/logos/furio.svg" alt="FURIO">
+                    <span>FURIO</span>
+                </div>
+                <div class="brand-item-logo mini">
+                    <img src="assets/logos/girling.svg" alt="GIRLING">
+                    <span>GIRLING</span>
+                </div>
+                <div class="brand-item-logo mini">
+                    <img src="assets/logos/hella.svg" alt="HELLA">
+                    <span>HELLA</span>
+                </div>
+                <div class="brand-item-logo mini">
+                    <img src="assets/logos/ina.svg" alt="INA">
+                    <span>INA</span>
+                </div>
+                <div class="brand-item-logo mini">
+                    <img src="assets/logos/ktk.svg" alt="KTK">
+                    <span>KTK</span>
+                </div>
+                <div class="brand-item-logo mini">
+                    <img src="assets/logos/luk.svg" alt="LUK">
+                    <span>LUK</span>
+                </div>
+                <div class="brand-item-logo mini">
+                    <img src="assets/logos/monroe.svg" alt="MONROE">
+                    <span>MONROE</span>
+                </div>
+                <div class="brand-item-logo mini">
+                    <img src="assets/logos/nissin.svg" alt="NISSIN">
+                    <span>NISSIN</span>
+                </div>
+                <div class="brand-item-logo mini">
+                    <img src="assets/logos/optibelt.svg" alt="OPTIBELT">
+                    <span>OPTIBELT</span>
+                </div>
+                <div class="brand-item-logo mini">
+                    <img src="assets/logos/philips.svg" alt="PHILIPS">
+                    <span>PHILIPS</span>
+                </div>
+                <div class="brand-item-logo mini">
+                    <img src="assets/logos/skr.svg" alt="SKR">
+                    <span>SKR</span>
+                </div>
+                <div class="brand-item-logo mini">
+                    <img src="assets/logos/valeo.svg" alt="VALEO">
+                    <span>VALEO</span>
+                </div>
+                <div class="brand-item-logo mini">
+                    <img src="assets/logos/wip_wellinterparts.svg" alt="WIP">
+                    <span>WIP</span>
+                </div>
+                <div class="brand-item-logo mini">
+                    <img src="assets/logos/wix.svg" alt="WIX">
+                    <span>WIX</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT CATEGORIES SECTION - USING LOCAL IMAGES FROM ASSETS/IMAGES -->
+    <section class="categories-section" id="categories">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tagline">PRODUCT CATEGORIES</span>
+                <h2 class="section-title text-navy">หมวดหมู่สินค้าและระบบอะไหล่ที่พร้อมให้บริการ</h2>
+                <div class="title-underline"></div>
+                <p class="section-desc">สินค้าครบวงจรสำหรับรถยนต์ส่วนบุคคล รถกระบะ และรถบรรทุก ครอบคลุมทุกระบบหลัก</p>
+            </div>
+
+            <div class="categories-grid">
+                <!-- Category 1 -->
+                <div class="category-card-img">
+                    <div class="cat-image-wrapper">
+                        <img src="assets/images/engine_system.jpg" alt="ระบบเครื่องยนต์">
+                    </div>
+                    <div class="cat-content">
+                        <h3 class="category-name">ระบบเครื่องยนต์</h3>
+                        <p class="category-desc">ฝาสูบ, ประเก็นชุดใหญ่, วาล์วไอดี-ไอเสีย อะไหล่ภายในเครื่องยนต์จากแบรนด์ดัง</p>
+                        <a href="https://line.me/ti/p/~@joj9586w" target="_blank" class="cat-link">สอบถามอะไหล่เครื่องยนต์ &rarr;</a>
+                    </div>
+                </div>
+                <!-- Category 2 -->
+                <div class="category-card-img">
+                    <div class="cat-image-wrapper">
+                        <img src="assets/images/suspension_system.jpg" alt="ระบบช่วงล่าง">
+                    </div>
+                    <div class="cat-content">
+                        <h3 class="category-name">ระบบช่วงล่าง</h3>
+                        <p class="category-desc">โช้คอัพแท้ KYB, ลูกหมาก, บูชหิ้วเครื่อง, และชิ้นส่วนช่วงล่างรถกระบะ/รถบรรทุก</p>
+                        <a href="https://line.me/ti/p/~@joj9586w" target="_blank" class="cat-link">สอบถามอะไหล่ช่วงล่าง &rarr;</a>
+                    </div>
+                </div>
+                <!-- Category 3 -->
+                <div class="category-card-img">
+                    <div class="cat-image-wrapper">
+                        <img src="assets/images/braking_system.jpg" alt="ระบบเบรก">
+                    </div>
+                    <div class="cat-content">
+                        <h3 class="category-name">ระบบเบรก</h3>
+                        <p class="category-desc">ผ้าเบรกและจานเบรกเซรามิก TRW/AISIN, สายอ่อนเบรก, แม่ปั๊ม และน้ำมันเบรก</p>
+                        <a href="https://line.me/ti/p/~@joj9586w" target="_blank" class="cat-link">สอบถามอะไหล่ระบบเบรก &rarr;</a>
+                    </div>
+                </div>
+                <!-- Category 4 -->
+                <div class="category-card-img">
+                    <div class="cat-image-wrapper">
+                        <img src="assets/images/clutch_system.jpg" alt="ระบบคลัตช์">
+                    </div>
+                    <div class="cat-content">
+                        <h3 class="category-name">ระบบคลัตช์</h3>
+                        <p class="category-desc">แผ่นคลัตช์, หวีคลัตช์ และลูกปืนกดคลัตช์คุณภาพแบรนด์ดังระดับโลก EXEDY และ AISIN</p>
+                        <a href="https://line.me/ti/p/~@joj9586w" target="_blank" class="cat-link">สอบถามอะไหล่ระบบคลัตช์ &rarr;</a>
+                    </div>
+                </div>
+                <!-- Category 5 -->
+                <div class="category-card-img">
+                    <div class="cat-image-wrapper">
+                        <img src="assets/images/lighting_system.jpg" alt="ระบบไฟและแสงสว่าง">
+                    </div>
+                    <div class="cat-content">
+                        <h3 class="category-name">ระบบไฟและแสงสว่าง</h3>
+                        <p class="category-desc">หลอดไฟหน้ารถยนต์ Philips/Hella, ไฟท้ายรถบรรทุก, ฟิวส์ และแบตเตอรี่รถยนต์ FB</p>
+                        <a href="https://line.me/ti/p/~@joj9586w" target="_blank" class="cat-link">สอบถามระบบไฟ &rarr;</a>
+                    </div>
+                </div>
+                <!-- Category 6 -->
+                <div class="category-card-img">
+                    <div class="cat-image-wrapper">
+                        <img src="assets/images/lubrication_system.jpg" alt="น้ำมันเครื่องและหล่อลื่น">
+                    </div>
+                    <div class="cat-content">
+                        <h3 class="category-name">น้ำมันเครื่องและหล่อลื่น</h3>
+                        <p class="category-desc">น้ำมันหล่อลื่นดีเซล/เบนซินสังเคราะห์แท้ 100% Petronas, Furio, Castrol, Gulf Western, Polzar</p>
+                        <a href="https://line.me/ti/p/~@joj9586w" target="_blank" class="cat-link">สอบถามน้ำมันหล่อลื่น &rarr;</a>
+                    </div>
+                </div>
+                <!-- Category 7 -->
+                <div class="category-card-img">
+                    <div class="cat-image-wrapper">
+                        <img src="assets/images/bearings_system.jpg" alt="ตลับลูกปืน">
+                    </div>
+                    <div class="cat-content">
+                        <h3 class="category-name">ตลับลูกปืน</h3>
+                        <p class="category-desc">ตลับลูกปืนล้อ ลูกปืนเกียร์ และตลับลูกปืนอุตสาหกรรม มาตรฐานแท้จาก NSK และ SKF</p>
+                        <a href="https://line.me/ti/p/~@joj9586w" target="_blank" class="cat-link">สอบถามตลับลูกปืน &rarr;</a>
+                    </div>
+                </div>
+                <!-- Category 8 -->
+                <div class="category-card-img">
+                    <div class="cat-image-wrapper">
+                        <img src="assets/images/drivetrain_system.jpg" alt="ระบบส่งกำลังและซีล">
+                    </div>
+                    <div class="cat-content">
+                        <h3 class="category-name">ระบบส่งกำลังและซีล</h3>
+                        <p class="category-desc">สายพานพัดลม ซีลคอหน้า-คอหลัง โอริง ซีลยางทนน้ำมันและทนความร้อนสูง</p>
+                        <a href="https://line.me/ti/p/~@joj9586w" target="_blank" class="cat-link">สอบถามระบบส่งกำลัง &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST STATS SECTION -->
     <section class="stats-section">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">30+</div>
+                <div class="stat-label">แบรนด์ชั้นนำระดับโลก</div>
+            </div>
+            <div class="divider-v"></div>
+            <div class="stat-item">
+                <div class="stat-number">20,000+</div>
+                <div class="stat-label">รายการสินค้าในสต๊อก</div>
+            </div>
+            <div class="divider-v"></div>
+            <div class="stat-item">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">ปีแห่งความไว้วางใจและการบริการ</div>
+            </div>
+            <div class="divider-v"></div>
+            <div class="stat-item">
+                <div class="stat-number">77</div>
+                <div class="stat-label">จังหวัดจัดส่งครอบคลุมทั่วประเทศ</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE QUERY WIDGET SECTION -->
+    <section class="rfq-section" id="rfq-section">
+        <div class="container rfq-container">
+            <div class="rfq-info">
+                <span class="section-tagline">GET A QUOTE</span>
+                <h2 class="section-title text-white">เช็กราคาอะไหล่ตรงรุ่นด่วน</h2>
+                <p class="rfq-text">
+                    กรอกข้อมูลเบื้องต้นเกี่ยวกับรถยนต์และอะไหล่ที่คุณต้องการ 
+                    ระบบจะสร้างลิงก์สำหรับส่งข้อความแชทส่งให้ผู้เชี่ยวชาญตรวจสอบได้ทันทีฟรี!
+                </p>
+                <div class="phone-card">
+                    <span class="phone-icon">📞</span>
+                    <div>
+                        <h4>สายด่วนบริการลูกค้า</h4>
+                        <p class="phone-numbers"><a href="tel:0902406826" class="phone-numbers-link">090-240-6826</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rfq-form-card">
+                <h3 class="form-title">แบบฟอร์มตรวจสอบอะไหล่</h3>
+                <form id="rfqForm">
+                    <div class="form-group">
+                        <label for="carBrand">ยี่ห้อรถยนต์ / รถบรรทุก</label>
+                        <select id="carBrand" required>
+                            <option value="">-- เลือกยี่ห้อรถยนต์ --</option>
+                            <option value="Toyota">TOYOTA (โตโยต้า)</option>
+                            <option value="Isuzu">ISUZU (อีซูซุ)</option>
+                            <option value="Hino">HINO (ฮีโน่)</option>
+                            <option value="Honda">HONDA (ฮอนด้า)</option>
+                            <option value="Mitsubishi">MITSUBISHI (มิตซูบิชิ)</option>
+                            <option value="Nissan">NISSAN (นิสสัน)</option>
+                            <option value="Ford">FORD (ฟอร์ด)</option>
+                            <option value="Other">ยี่ห้ออื่น ๆ / รถบรรทุกอื่น ๆ</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="carModel">รุ่นรถยนต์ / ปี / รหัสตัวถัง (ถ้ามี)</label>
+                        <input type="text" id="carModel" placeholder="ตัวอย่าง: Hilux Revo ปี 2018 หรือ รหัสตัวถัง 17 หลัก" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="partCategory">ประเภทอะไหล่ที่ต้องการ</label>
+                        <select id="partCategory" required>
+                            <option value="">-- เลือกหมวดหมู่ชิ้นส่วน --</option>
+                            <option value="Engine">ระบบเครื่องยนต์ (ประเก็น, ฝาสูบ, วาล์ว)</option>
+                            <option value="Suspension">ระบบช่วงล่าง (โช้คอัพ, บูช, ลูกหมาก)</option>
+                            <option value="Braking">ระบบเบรก (ผ้าเบรก, จานเบรก)</option>
+                            <option value="Clutch">ระบบคลัตช์ (แผ่นคลัตช์, หวีคลัตช์)</option>
+                            <option value="Bearings">ตลับลูกปืน (ลูกปืนล้อ, ลูกปืนเกียร์)</option>
+                            <option value="Lubricants">น้ำมันเครื่อง / สารหล่อลื่น</option>
+                            <option value="Drivetrain">ระบบส่งกำลังและซีลยาง</option>
+                            <option value="Electrical">ระบบไฟ / แบตเตอรี่</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="additionalNotes">รายละเอียดอะไหล่เพิ่มเติม</label>
+                        <textarea id="additionalNotes" rows="3" placeholder="ตัวอย่าง: ต้องการแผ่นคลัตช์ EXEDY ของแท้ตรงรุ่น และน้ำมันเครื่อง PETRONAS Syntium"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-green btn-full">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738S0 4.935 0 10.304c0 4.81 4.26 8.847 10.014 9.578.39.082.92.257 1.054.59.123.308.08.79.039 1.102-.04.308-.184 1.25-.224 1.517-.067.43-.314 1.684 1.353.918 1.667-.767 9.012-5.31 12.28-9.088C22.684 13.064 24 11.758 24 10.304zm-16.744.908H5.97a.38.38 0 01-.38-.38v-3.79a.38.38 0 01.38-.38.38.38 0 01.38.38v3.41h1.286a.38.38 0 01.38.38.38.38 0 01-.38.38zm2.253-.38a.38.38 0 01-.38.38h-.758a.38.38 0 01-.38-.38v-3.79a.38.38 0 01.38-.38h.758c.21 0 .38.17.38.38v3.79zm-.758-.758h.379v-2.274h-.379v2.274zm4.246.758a.38.38 0 01-.302.148H12c-.21 0-.38-.17-.38-.38v-3.79c0-.21.17-.38.38-.38h.76c.21 0 .38.17.38.38v2.492l1.326-2.68a.377.377 0 01.442-.206c.196.05.321.242.276.438L13.88 9.54h1.173a.38.38 0 01.38.38.38.38 0 01-.38.38h-1.306zm3.32-.423c-.097.23-.332.378-.58.378h-1.286a.38.38 0 01-.38-.38v-3.79a.38.38 0 01.38-.38h1.286c.248 0 .483.148.58.378a.38.38 0 01-.7.294h-.786v1.137h.786a.38.38 0 010 .758h-.786v1.137h.786c.328 0 .614-.2.699-.516a.38.38 0 01.716.191z"/></svg>
+                        <span>คัดลอกรายละเอียดแล้วแชททาง LINE</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- STOREFRONT GALLERY SECTION - ONE SINGLE STOREFRONT PHOTO ONLY -->
+    <section class="gallery-section" id="gallery">
         <div class="container">
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-icon"><i data-lucide="shield-check"></i></div>
-                    <div class="stat-number">30+</div>
-                    <div class="stat-label">ปีแห่งความไว้วางใจหน้าร้าน</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon"><i data-lucide="package"></i></div>
-                    <div class="stat-number">100k+</div>
-                    <div class="stat-label">รายการสินค้าพร้อมจัดส่ง</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon"><i data-lucide="star"></i></div>
-                    <div class="stat-number">99%</div>
-                    <div class="stat-label">คะแนนรีวิวเชิงบวกบน Lazada</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon"><i data-lucide="users"></i></div>
-                    <div class="stat-number">9,100+</div>
-                    <div class="stat-label">ผู้ติดตามบนช่องทางออนไลน์</div>
+            <div class="section-header text-center">
+                <span class="section-tagline">OUR STORE</span>
+                <h2 class="section-title text-navy">ภาพบรรยากาศหน้าร้าน</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="storefront-single-wrapper">
+                <img src="assets/storefront.jpg" alt="บจก. กิจชัยอะไหล่ หน้าร้านแก้งคร้อ" class="storefront-single-image">
+                <div class="storefront-single-caption">
+                    <h3>บริษัท กิจชัยอะไหล่ จำกัด (สาขา 1 แก้งคร้อ)</h3>
+                    <p>ศูนย์กระจายอะไหล่และน้ำมันหล่อลื่นรายใหญ่ บริการระดับพรีเมียมด้วยความโปร่งใส มั่นใจมีหน้าร้านจริง</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Scrolling Logo Marquee Section -->
-    <div class="logo-marquee-container">
-        <div class="logo-marquee-wrapper">
-            <!-- Slide 1 -->
-            <div class="logo-slide">
-                <div class="marquee-logo-item"><img src="assets/logos/petronas.svg" alt="PETRONAS"></div>
-                <div class="marquee-logo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Castrol_logo.svg" alt="CASTROL"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/bosch.svg" alt="BOSCH"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/brembo.svg" alt="BREMBO"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/trw.svg" alt="TRW"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/exedy.png" alt="EXEDY"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/fb_battery.png" alt="FB BATTERY"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/furio.svg" alt="FURIO"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/hella.svg" alt="HELLA"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/lucas.svg" alt="LUCAS"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/philips.svg" alt="PHILIPS"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/kyb.svg" alt="KYB"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/wix.svg" alt="WIX"></div>
-            </div>
-            <!-- Slide 2 (Duplicate for Seamless Loop) -->
-            <div class="logo-slide">
-                <div class="marquee-logo-item"><img src="assets/logos/petronas.svg" alt="PETRONAS"></div>
-                <div class="marquee-logo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Castrol_logo.svg" alt="CASTROL"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/bosch.svg" alt="BOSCH"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/brembo.svg" alt="BREMBO"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/trw.svg" alt="TRW"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/exedy.png" alt="EXEDY"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/fb_battery.png" alt="FB BATTERY"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/furio.svg" alt="FURIO"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/hella.svg" alt="HELLA"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/lucas.svg" alt="LUCAS"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/philips.svg" alt="PHILIPS"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/kyb.svg" alt="KYB"></div>
-                <div class="marquee-logo-item"><img src="assets/logos/wix.svg" alt="WIX"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Brands Grid Section -->
-    <section id="brands" class="brands-section section-padding">
+    <!-- CUSTOMER REVIEWS SECTION -->
+    <section class="reviews-section">
         <div class="container">
-            <div class="section-header">
-                <h3 class="section-title-alt">Brand Partners</h3>
-                <h2 class="section-title">แบรนด์สินค้าที่เราจัดจำหน่าย</h2>
-                <p class="section-desc-center">คัดสรรเฉพาะอะไหล่และน้ำมันเครื่องแท้ 100% จากผู้ผลิตมาตรฐานสากลระดับโลก</p>
+            <div class="section-header text-center">
+                <span class="section-tagline">CUSTOMER REVIEWS</span>
+                <h2 class="section-title text-navy">เสียงตอบรับจากความไว้วางใจของลูกค้า</h2>
+                <div class="title-underline"></div>
+                <p class="section-desc">นี่คือความพึงพอใจบางส่วนจากช่างซ่อม เจ้าของอู่ และลูกค้ารายย่อยที่ใช้บริการเรา</p>
             </div>
-            
-            <div class="brand-categories">
-                <!-- Group 1: Lubricants -->
-                <div class="brand-category-group">
-                    <h3 class="brand-category-title">
-                        <i data-lucide="droplet"></i>
-                        <span>กลุ่มน้ำมันหล่อลื่น & เคมีภัณฑ์</span>
-                    </h3>
-                    <div class="brand-logos-grid">
-                        <div class="brand-logo-card featured-petronas-logo">
-                            <span class="badge-featured">Official Partner</span>
-                            <img src="assets/logos/petronas.svg" alt="PETRONAS" class="brand-logo-img">
-                            <div class="brand-logo-desc">น้ำมันเครื่องปิโตรนาสแท้ 100%</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Castrol_logo.svg" alt="CASTROL" class="brand-logo-img">
-                            <div class="brand-logo-desc">คาสตรอล หล่อลื่นเกรดโลก</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/furio.svg" alt="FURIO" class="brand-logo-img">
-                            <div class="brand-logo-desc">น้ำมันเครื่องพรีเมียมจากบางจาก</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <div class="brand-logo-name">PULZAR</div>
-                            <div class="brand-logo-desc">น้ำมันหล่อลื่นและจาระบีเพาซาร์</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Group 2: Replacement Parts -->
-                <div class="brand-category-group">
-                    <h3 class="brand-category-title">
-                        <i data-lucide="wrench"></i>
-                        <span>กลุ่มอะไหล่ทดแทน & ช่วงล่าง & ระบบขับเคลื่อน</span>
-                    </h3>
-                    <div class="brand-logos-grid">
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/trw.svg" alt="TRW" class="brand-logo-img">
-                            <div class="brand-logo-desc">ระบบเบรกและช่วงล่างมาตรฐานโลก</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/exedy.png" alt="EXEDY" class="brand-logo-img">
-                            <div class="brand-logo-desc">คลัตช์คุณภาพสูงมาตรฐานญี่ปุ่น</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/aisin.svg" alt="AISIN" class="brand-logo-img">
-                            <div class="brand-logo-desc">อะไหล่ระบบส่งกำลังและปั๊มน้ำ</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/skr.svg" alt="SKR" class="brand-logo-img">
-                            <div class="brand-logo-desc">ยางแท่นเครื่อง แท่นเกียร์ บูชยาง</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/lucas.svg" alt="LUCAS" class="brand-logo-img">
-                            <div class="brand-logo-desc">ระบบไฟฟ้า ไดชาร์จ ไดสตาร์ท</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/hella.svg" alt="HELLA" class="brand-logo-img">
-                            <div class="brand-logo-desc">โคมไฟหน้ารถ แตร และชิ้นส่วนแอร์</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/nsk.svg" alt="NSK" class="brand-logo-img">
-                            <div class="brand-logo-desc">ตลับลูกปืนยานยนต์และตลับลูกปืน NSK</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/kyb.svg" alt="KYB" class="brand-logo-img">
-                            <div class="brand-logo-desc">โช้คอัพยอดนิยมประสิทธิภาพสูง</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/bosch.svg" alt="BOSCH" class="brand-logo-img">
-                            <div class="brand-logo-desc">อะไหล่ระบบเครื่องยนต์และหัวเทียน</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/brembo.svg" alt="BREMBO" class="brand-logo-img">
-                            <div class="brand-logo-desc">ระบบเบรกเกรดสูงสไตล์สปอร์ต</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/delphi.svg" alt="DELPHI" class="brand-logo-img">
-                            <div class="brand-logo-desc">อะไหล่แท้และเคมีภัณฑ์เดลฟาย</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/fag.svg" alt="FAG" class="brand-logo-img">
-                            <div class="brand-logo-desc">ตลับลูกปืนและดุมล้อเกรดเยอรมัน</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/girling.svg" alt="GIRLING" class="brand-logo-img">
-                            <div class="brand-logo-desc">ผ้าเบรกและไฮดรอลิกเบรกคุณภาพ</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/ina.svg" alt="INA" class="brand-logo-img">
-                            <div class="brand-logo-desc">ลูกรอกสายพานและระบบวาล์วเครื่อง</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/luk.svg" alt="LUK" class="brand-logo-img">
-                            <div class="brand-logo-desc">ระบบคลัตช์มาตรฐานแท้ติดรถยนต์</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/monroe.svg" alt="MONROE" class="brand-logo-img">
-                            <div class="brand-logo-desc">โช้คอัพคุณภาพระดับเวิลด์คลาส</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/nissin.svg" alt="NISSIN" class="brand-logo-img">
-                            <div class="brand-logo-desc">อะไหล่และชิ้นส่วนปั๊มเบรกมาตรฐาน</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/optibelt.svg" alt="OPTIBELT" class="brand-logo-img">
-                            <div class="brand-logo-desc">สายพานพัดลมและสายพานไทม์มิ่ง</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/wix.svg" alt="WIX" class="brand-logo-img">
-                            <div class="brand-logo-desc">ไส้กรองน้ำมันเครื่องและกรองอากาศ</div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Group 3: Truck & Air Systems -->
-                <div class="brand-category-group">
-                    <h3 class="brand-category-title">
-                        <i data-lucide="truck"></i>
-                        <span>กลุ่มอะไหล่รถพ่วง & รถบรรทุก & ระบบลม</span>
-                    </h3>
-                    <div class="brand-logos-grid">
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/wip_wellinterparts.svg" alt="WIP" class="brand-logo-img">
-                            <div class="brand-logo-desc">อะไหล่ระบบพ่วงและรถใหญ่ WIP</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/sorl.svg" alt="SORL" class="brand-logo-img">
-                            <div class="brand-logo-desc">ระบบเบรกลมและวาล์วลมรถบรรทุก</div>
-                        </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/ktk.svg" alt="KTK" class="brand-logo-img">
-                            <div class="brand-logo-desc">ชิ้นส่วนอะไหล่เพลาและระบบช่วงล่าง</div>
+            <div class="reviews-grid">
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-comment">"สั่งของและอะไหล่ช่วงล่างไปซ่อมรถบรรทุกบ่อยมากครับ ได้สินค้าแบรนด์แท้ แพ็กของเรียบร้อยรวดเร็วทันใจ ราคาเป็นธรรมมากครับ"</p>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">🚗</div>
+                        <div>
+                            <h4 class="reviewer-name">ช่างเกียรติ อู่บริการยานยนต์</h4>
+                            <p class="reviewer-location">อู่ซ่อมรถบรรทุก จ.ขอนแก่น</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Group 4: Batteries & Lighting -->
-                <div class="brand-category-group">
-                    <h3 class="brand-category-title">
-                        <i data-lucide="zap"></i>
-                        <span>กลุ่มแบตเตอรี่ & ระบบแสงสว่าง</span>
-                    </h3>
-                    <div class="brand-logos-grid">
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/fb_battery.png" alt="FB BATTERY" class="brand-logo-img">
-                            <div class="brand-logo-desc">แบตเตอรี่รถยนต์ประเภทแห้ง/กึ่งแห้ง</div>
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-comment">"เจ้าหน้าที่ช่วยตรวจสอบอะไหล่ทางไลน์ได้ดีมาก ส่งเลขตัวถังรถไปให้ เช็กของแท้แบรนด์ส่งตรงรุ่นได้ 100% เลยครับ ไม่ต้องเดาเองให้สั่งผิด"</p>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">🔧</div>
+                        <div>
+                            <h4 class="reviewer-name">คุณธวัชชัย การขนส่ง</h4>
+                            <p class="reviewer-location">เจ้าของธุรกิจรถพ่วง จ.ชัยภูมิ</p>
                         </div>
-                        <div class="brand-logo-card">
-                            <img src="assets/logos/philips.svg" alt="PHILIPS" class="brand-logo-img">
-                            <div class="brand-logo-desc">หลอดไฟหน้าและไฟสัญญาณรถยนต์</div>
+                    </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-comment">"บริการดีเยี่ยม อะไหล่แบรนด์ระดับโลกเพียบ ทั้งน้ำมันเครื่อง Petronas และผ้าเบรก TRW แนะนำร้านนี้สำหรับช่างและอู่ซ่อมเลยครับ เชื่อถือได้จริง"</p>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">📦</div>
+                        <div>
+                            <h4 class="reviewer-name">เฮียชัย ร้านอะไหล่</h4>
+                            <p class="reviewer-location">ตัวแทนจัดซื้ออะไหล่ จ.เลย</p>
                         </div>
                     </div>
                 </div>
@@ -316,200 +556,159 @@
         </div>
     </section>
 
-    <!-- Why Choose Us / Advantages Section -->
-    <section id="about" class="about-section section-padding">
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
         <div class="container">
-            <div class="section-header">
-                <h3 class="section-title-alt">Our Strengths</h3>
-                <h2 class="section-title">ทำไมลูกค้าจึงไว้วางใจ กิจชัยอะไหล่</h2>
-                <p class="section-desc-center">ด้วยประสบการณ์ค้าส่งหน้าร้านและออนไลน์ เราคัดสรรสิ่งที่ดีที่สุดเพื่อรถยนต์ของคุณ</p>
+            <div class="section-header text-center">
+                <span class="section-tagline">FAQ</span>
+                <h2 class="section-title text-navy">คำถามที่พบบ่อย (FAQ)</h2>
+                <div class="title-underline"></div>
             </div>
-            
-            <div class="about-grid">
-                <!-- Card 1 -->
-                <div class="advantage-card">
-                    <div class="advantage-icon-wrapper">
-                        <i data-lucide="check-square"></i>
+
+            <div class="faq-accordion-container">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>❓ จะมั่นใจได้อย่างไรว่าสินค้าทั้งหมดเป็นอะไหล่แท้?</span>
+                        <span class="faq-toggle-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>บจก. กิจชัยอะไหล่ เป็นตัวแทนจัดจำหน่ายและสั่งซื้อสินค้าตรงจากตัวแทนผู้นำเข้าอย่างเป็นทางการของแบรนด์ชั้นนำระดับโลกเท่านั้น เราการันตีสินค้าแท้ 100% หากลูกค้าตรวจพบความผิดปกติ ทางร้านยินดีคืนเงินเต็มจำนวนและช่วยแก้ปัญหาให้ทันทีครับ</p>
                     </div>
-                    <h3>เช็คอะไหล่ตรงรุ่น 100%</h3>
-                    <p>ป้องกันการซื้อผิดขนาดหรือผิดรุ่นรถยนต์ ด้วยการส่งเช็คเลขตัวถังรถยนต์ (VIN) กับเจ้าหน้าที่ผู้เชี่ยวชาญก่อนจัดส่งทุกครั้ง</p>
                 </div>
-                
-                <!-- Card 2 -->
-                <div class="advantage-card">
-                    <div class="advantage-icon-wrapper">
-                        <i data-lucide="truck"></i>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>❓ บริการเช็กอะไหล่ตรงรุ่นต้องทำอย่างไร?</span>
+                        <span class="faq-toggle-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>คุณลูกค้าสามารถแอดไลน์ทักแชทหาเจ้าหน้าที่ของร้านได้ฟรี โดยให้ข้อมูลรุ่นรถ ปีผลิต หรือดีที่สุดคือส่ง **รูปเลขตัวถังรถ 17 หลัก (เลขแชสซี)** พร้อมภาพถ่ายชิ้นส่วนอะไหล่เก่ามาให้เรา ช่างผู้เชี่ยวชาญของเราจะตรวจสอบสเปกของโรงงานเพื่อจัดส่งอะไหล่ที่ตรงรุ่นชัวร์ 100% ให้ครับ</p>
                     </div>
-                    <h3>จัดส่งรวดเร็วทั่วไทย</h3>
-                    <p>ระบบแพ็กส่งสินค้าที่รวดเร็วภายใน 24 ชม. ส่งตรงถึงมือคุณด้วยขนส่งชั้นนำ รองรับทั้งการโอนเงินและเก็บเงินปลายทาง</p>
                 </div>
-                
-                <!-- Card 3 -->
-                <div class="advantage-card">
-                    <div class="advantage-icon-wrapper">
-                        <i data-lucide="shield-check"></i>
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>❓ ใช้เวลากี่วันสินค้าจะส่งถึงมือ?</span>
+                        <span class="faq-toggle-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>สำหรับพื้นที่ในกรุงเทพฯ และภาคอีสาน (ขอนแก่น ชัยภูมิ โคราช ฯลฯ) สินค้าจะจัดส่งถึงใน 1-2 วันทำการ สำหรับจังหวัดอื่น ๆ ทั่วประเทศจะใช้เวลา 2-3 วันทำการ ทางร้านจัดส่งสินค้าออกจากคลังสินค้าทุกวันทำการผ่านขนส่งเอกชนที่มีมาตรฐานความปลอดภัย</p>
                     </div>
-                    <h3>รับประกันสินค้าแท้</h3>
-                    <p>สินค้าทุกชิ้นรับประกันคุณภาพจากแบรนด์ผู้ผลิต ไม่ต้องกังวลเรื่องสินค้าลอกเลียนแบบ คืนเงินเต็มจำนวนหากตรวจสอบพบปัญหา</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>❓ รองรับการซื้อในนามบริษัทและออกใบกำกับภาษีเต็มรูปแบบหรือไม่?</span>
+                        <span class="faq-toggle-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>ใช่ครับ บจก. กิจชัยอะไหล่ จดทะเบียนในรูปแบบบริษัทจำกัดอย่างถูกต้อง เราสามารถออกใบกำกับภาษีเต็มรูปแบบ (VAT) สำหรับบริษัทขนส่ง หรืออู่ซ่อมรถยนต์เพื่อนำไปยื่นบันทึกค่าใช้จ่ายได้อย่างถูกต้องตามกฎหมาย โปรดแจ้งข้อมูลผู้เสียภาษีแก่เจ้าหน้าที่ทางไลน์ขณะสั่งซื้อสินค้า</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section section-padding">
-        <div class="container">
-            <div class="section-header">
-                <h3 class="section-title-alt">Contact Us</h3>
-                <h2 class="section-title">ช่องทางการติดต่อและที่ตั้งหน้าร้าน</h2>
-                <p class="section-desc-center">เพื่อการเช็คราคาอะไหล่ที่เร็วที่สุด แอดไลน์และส่งรูปอะไหล่ที่ต้องการมาให้เราตรวจสอบได้ทันที</p>
-            </div>
-            
-            <div class="contact-grid">
-                <!-- Left: Channels -->
-                <div class="contact-info-panel">
-                    <h3>ช่องทางติดต่อออนไลน์</h3>
-                    <div class="channel-list">
-                        <!-- LINE OA -->
-                        <div class="channel-card line-card">
-                            <div class="channel-icon"><i data-lucide="message-circle"></i></div>
-                            <div class="channel-details">
-                                <h4>LINE Official Account</h4>
-                                <p class="channel-id">LINE ID: @joj9586w</p>
-                                <span class="badge">ตอบกลับรวดเร็วทันใจ</span>
-                            </div>
-                            <div class="channel-actions">
-                                <a href="https://line.me/ti/p/~@joj9586w" target="_blank" class="btn btn-sm btn-line">เพิ่มเพื่อน</a>
-                                <button class="btn btn-sm btn-icon-only copy-btn" data-copy="@joj9586w" title="คัดลอก ID">
-                                    <i data-lucide="copy"></i>
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <!-- Lazada Shop -->
-                        <div class="channel-card lazada-card">
-                            <div class="channel-icon"><i data-lucide="shopping-bag"></i></div>
-                            <div class="channel-details">
-                                <h4>Lazada Official Store</h4>
-                                <p class="channel-id">ร้านค้าออนไลน์ KC-AUTOPARTS</p>
-                                <span class="badge">มีโค้ดส่วนลดพิเศษ</span>
-                            </div>
-                            <div class="channel-actions">
-                                <a href="https://www.lazada.co.th/shop/kc-autoparts/" target="_blank" class="btn btn-sm btn-secondary">เปิดร้านค้า</a>
-                            </div>
-                        </div>
-                        
-                        <!-- Facebook -->
-                        <div class="channel-card facebook-card">
-                            <div class="channel-icon"><i data-lucide="facebook"></i></div>
-                            <div class="channel-details">
-                                <h4>Facebook Page</h4>
-                                <p class="channel-id">กิจชัยอะไหล่ - แก้งคร้อ</p>
-                                <span class="badge">อัปเดตโปรโมชั่นร้าน</span>
-                            </div>
-                            <div class="channel-actions">
-                                <a href="https://www.facebook.com/Kijchaialai.KK/" target="_blank" class="btn btn-sm btn-outline">ไปที่เพจ</a>
-                            </div>
-                        </div>
-                        
-                        <!-- Hot Line -->
-                        <div class="channel-card phone-card">
-                            <div class="channel-icon"><i data-lucide="phone-call"></i></div>
-                            <div class="channel-details">
-                                <h4>สายด่วนติดต่อสอบถาม</h4>
-                                <p class="channel-id">โทร. 090-240-6826</p>
-                                <span class="badge">เวลาทำการ 08:00 - 17:00 น.</span>
-                            </div>
-                            <div class="channel-actions">
-                                <a href="tel:0902406826" class="btn btn-sm btn-primary">โทรออก</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Right: Storefront details & Custom Map Link -->
-                <div class="contact-store-panel">
-                    <h3>พิกัดหน้าร้านจริง</h3>
-                    <div class="store-address">
-                        <div class="address-item">
-                            <i data-lucide="map-pin"></i>
-                            <span>บจก. กิจชัยอะไหล่ จำกัด<br>เลขที่ 584 หมู่ 10 ถนนชัยภูมิ-ภูเขียว ตำบลหนองไผ่ อำเภอแก้งคร้อ จังหวัดชัยภูมิ 36150</span>
-                        </div>
-                        <div class="address-item">
-                            <i data-lucide="calendar"></i>
-                            <span>เปิดให้บริการ: วันจันทร์ - วันเสาร์ (หยุดวันอาทิตย์)</span>
-                        </div>
-                        <div class="address-item">
-                            <i data-lucide="clock"></i>
-                            <span>เวลาเปิด-ปิด: 08:00 น. - 17:00 น.</span>
-                        </div>
-                        <div class="address-item">
-                            <i data-lucide="mail"></i>
-                            <span>อีเมลติดต่อ: kijchaialai@gmail.com</span>
+    <!-- CONTACT & GOOGLE MAP SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="container contact-container">
+            <div class="contact-info-card">
+                <span class="section-tagline">CONTACT US</span>
+                <h2 class="section-title text-navy">ช่องทางการติดต่อและที่ตั้งร้าน</h2>
+                <p class="contact-sub">ยินดีต้อนรับทั้งลูกค้าปลีก อู่ซ่อมรถ และลูกค้าส่งโครงการ</p>
+
+                <div class="contact-details-list">
+                    <div class="c-detail-item">
+                        <span class="c-icon">📍</span>
+                        <div>
+                            <h4>บจก. กิจชัยอะไหล่ จำกัด (สาขา 1)</h4>
+                            <p>584 หนองไผ่ ตำบล ช่องสามหมอ อำเภอ แก้งคร้อ ชัยภูมิ 36150</p>
                         </div>
                     </div>
                     
-                    <div class="map-container">
-                        <div class="map-placeholder">
-                            <i data-lucide="navigation"></i>
-                            <h4>แผนที่ บจก. กิจชัยอะไหล่ (แก้งคร้อ)</h4>
-                            <p>มีหน้าร้านขนาดใหญ่ชัดเจน บริการจัดส่งทั่วประเทศ ปลอดภัย เชื่อถือได้ 100%</p>
-                            <a href="https://www.google.com/maps/search/?api=1&query=กิจชัยอะไหล่+แก้งคร้อ" target="_blank" class="btn btn-outline">
-                                <i data-lucide="external-link"></i>
-                                <span>เปิดนำทาง in Google Maps</span>
-                            </a>
+                    <div class="c-detail-item">
+                        <span class="c-icon">📞</span>
+                        <div>
+                            <h4>สายด่วนโทรสอบถาม</h4>
+                            <p><a href="tel:0902406826" class="contact-phone-link"><strong>090-240-6826</strong></a></p>
                         </div>
                     </div>
+
+                    <div class="c-detail-item">
+                        <span class="c-icon">💬</span>
+                        <div>
+                            <h4>LINE Official Account</h4>
+                            <p>LINE ID: <strong>@joj9586w</strong> (มีแอด @)</p>
+                            <a href="https://line.me/ti/p/~@joj9586w" target="_blank" class="text-link">คลิกเพื่อแอดไลน์เพิ่มเพื่อน &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="c-detail-item">
+                        <span class="c-icon">⏰</span>
+                        <div>
+                            <h4>เวลาเปิดให้บริการ</h4>
+                            <p>วันจันทร์ - วันเสาร์: 08:00 น. - 17:00 น. (หยุดวันอาทิตย์)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-channels">
+                    <a href="https://www.facebook.com/Kijchaialai.KK/" target="_blank" class="social-btn fb-btn">Facebook Page</a>
+                    <a href="https://www.lazada.co.th/shop/kc-autoparts/" target="_blank" class="social-btn lz-btn">Lazada Store</a>
+                </div>
+            </div>
+
+            <div class="map-card">
+                <iframe src="https://maps.google.com/maps?q=บริษัท%20กิจชัยอะไหล่%20จำกัด%20แก้งคร้อ%20ชัยภูมิ&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="map-actions">
+                    <a href="https://www.google.com/maps/search/?api=1&query=กิจชัยอะไหล่+แก้งคร้อ" target="_blank" class="btn btn-navy btn-full">
+                        <span>🧭 เปิดแผนที่นำทางบน Google Maps</span>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-container">
-                <div class="footer-brand">
-                    <h4><i data-lucide="cog"></i><span>กิจชัยอะไหล่</span></h4>
-                    <p>บริษัท กิจชัยอะไหล่ จำกัด (KC-AUTOPARTS) ศูนย์ค้าส่งและค้าปลีกอะไหล่รถยนต์ชั้นนำและน้ำมันเครื่องรายใหญ่ ประสบการณ์ยาวนานกว่า 30 ปี</p>
-                </div>
-                <div class="footer-links">
-                    <h4>เมนูลัด</h4>
-                    <ul>
-                        <li><a href="#">หน้าแรก</a></li>
-                        <li><a href="#brands">แบรนด์สินค้า</a></li>
-                        <li><a href="#contact">ติดต่อเรา</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>ร้านค้าออนไลน์</h4>
-                    <ul>
-                        <li><a href="https://www.lazada.co.th/shop/kc-autoparts/" target="_blank">ช้อปออนไลน์บน Lazada</a></li>
-                        <li><a href="https://www.facebook.com/Kijchaialai.KK/" target="_blank">เพจ Facebook</a></li>
-                        <li><a href="https://line.me/ti/p/~@joj9586w" target="_blank">สอบถามทาง LINE OA</a></li>
-                    </ul>
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <h3>บริษัท กิจชัยอะไหล่ จำกัด</h3>
+                <p>ศูนย์รวมอะไหล่รถยนต์และรถบรรทุกแบรนด์แท้ 100% ตัวแทนจำหน่ายหลักในภาคอีสาน</p>
+                <p>สาขา 1 584 หนองไผ่ ตำบล ช่องสามหมอ อำเภอ แก้งคร้อ ชัยภูมิ 36150</p>
+                <div class="copyright-text">
+                    &copy; 2026 บริษัท กิจชัยอะไหล่ จำกัด (KC-AUTOPARTS). สงวนลิขสิทธิ์ทั้งหมด.<br>
+                    ออกแบบและพัฒนาโดย Antigravity
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 บริษัท กิจชัยอะไหล่ จำกัด. สงวนลิขสิทธิ์ทั้งหมด (All Rights Reserved).</p>
-                <p>พัฒนาและออกแบบโดย Antigravity</p>
+            <div class="footer-right">
+                <h4>ลิงก์ด่วนและบริการ</h4>
+                <div class="footer-links">
+                    <a href="#">หน้าแรก</a>
+                    <a href="#why-us">ทำไมต้องเลือกเรา</a>
+                    <a href="#brands">แบรนด์ที่จำหน่าย</a>
+                    <a href="#categories">หมวดหมู่สินค้า</a>
+                    <a href="https://line.me/ti/p/~@joj9586w" target="_blank">แอดไลน์ติดต่อเรา</a>
+                    <a href="https://www.lazada.co.th/shop/kc-autoparts/" target="_blank">ช้อปออนไลน์บน Lazada</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Floating LINE OA button -->
-    <a href="https://line.me/ti/p/~@joj9586w" target="_blank" class="floating-line-btn">
-        <i data-lucide="message-circle"></i>
-        <span>สอบถามอะไหล่ทาง LINE</span>
-    </a>
-
-    <!-- Clipboard Copy Toast elements -->
-    <div class="toast" id="copyToast">
-        <i data-lucide="check-circle-2"></i>
-        <span>คัดลอก LINE ID เรียบร้อยแล้ว! (@joj9586w)</span>
+    <!-- STICKY FLOATING ACTION BUTTONS (LINE + MESSENGER) -->
+    <div class="sticky-action-group">
+        <a href="https://m.me/Kijchaialai.KK" target="_blank" class="sticky-btn sticky-msg-chat" aria-label="ทักแชททาง Messenger">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C6.477 2 2 6.145 2 11.258c0 2.914 1.455 5.518 3.735 7.21v3.743c0 .285.317.46.558.31l4.137-2.583a12.87 12.87 0 0 0 1.57.098c5.523 0 10-4.146 10-9.258C22 6.145 17.523 2 12 2zm1.096 12.012l-2.488-2.658-4.848 2.658 5.334-5.666 2.532 2.658 4.804-2.658-5.334 5.666z"/></svg>
+            <span class="sticky-btn-text">แชท Messenger</span>
+        </a>
+        <a href="https://line.me/ti/p/~@joj9586w" target="_blank" class="sticky-btn sticky-line-chat" aria-label="แอดไลน์สอบถามอะไหล่">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738S0 4.935 0 10.304c0 4.81 4.26 8.847 10.014 9.578.39.082.92.257 1.054.59.123.308.08.79.039 1.102-.04.308-.184 1.25-.224 1.517-.067.43-.314 1.684 1.353.918 1.667-.767 9.012-5.31 12.28-9.088C22.684 13.064 24 11.758 24 10.304zm-16.744.908H5.97a.38.38 0 01-.38-.38v-3.79a.38.38 0 01.38-.38.38.38 0 01.38.38v3.41h1.286a.38.38 0 01.38.38.38.38 0 01-.38.38zm2.253-.38a.38.38 0 01-.38.38h-.758a.38.38 0 01-.38-.38v-3.79a.38.38 0 01.38-.38h.758c.21 0 .38.17.38.38v3.79zm-.758-.758h.379v-2.274h-.379v2.274zm4.246.758a.38.38 0 01-.302.148H12c-.21 0-.38-.17-.38-.38v-3.79c0-.21.17-.38.38-.38h.76c.21 0 .38.17.38.38v2.492l1.326-2.68a.377.377 0 01.442-.206c.196.05.321.242.276.438L13.88 9.54h1.173a.38.38 0 01.38.38.38.38 0 01-.38.38h-1.306zm3.32-.423c-.097.23-.332.378-.58.378h-1.286a.38.38 0 01-.38-.38v-3.79a.38.38 0 01.38-.38h1.286c.248 0 .483.148.58.378a.38.38 0 01-.7.294h-.786v1.137h.786a.38.38 0 010 .758h-.786v1.137h.786c.328 0 .614-.2.699-.516a.38.38 0 01.716.191z"/></svg>
+            <span class="sticky-btn-text">เช็กอะไหล่ LINE</span>
+        </a>
     </div>
 
-    <!-- JavaScript File -->
-    <script src="main.js"></script>
+    <!-- Main JavaScript -->
+    <script src="app.js"></script>
 </body>
 </html>
